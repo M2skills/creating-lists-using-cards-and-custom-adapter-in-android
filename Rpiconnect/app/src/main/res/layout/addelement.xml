@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <Button
+            android:id="@+id/addItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Item"
+            android:onClick="onClick"
+            android:layout_below="@+id/etareaname"
+            android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etappname"
+        android:hint="Add Appliance"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:layout_below="@+id/addItem"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
